@@ -1,0 +1,105 @@
+.main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.tasks-panel {
+    background-color: #fff;
+    flex: 0 0 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tasks-panel__actions-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+button.tasks-panel__action {
+    background-color: forestgreen;
+    border: none;
+    padding: 5px 15px;
+    color: #fff;
+}
+
+.tasks-panel__tabs {
+    height: 20px;
+    flex: 0 0 20px;
+    margin: 5px 0 0;
+}
+
+.tasks-panel__schedule {
+    flex: 1 0 100%;
+}
+
+.tasks-panel__row {
+    background-color: #fff;
+    border-bottom: 2px #ccc solid;
+    display: flex;
+    position: relative;
+}
+
+.tasks-panel__user {
+    background-color: forestgreen;
+    width: 100px;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tasks-panel__task {
+    background-color: grey;
+    width: 200px;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.days-row {
+    height: 30px;
+    padding-left: 100px;
+}
+
+.user-row {
+    height: 100px;
+}
+
+#default-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tasks-panel__day {
+    width: 200px;
+    border: 1px solid #ccc;
+    margin: 0;
+}
+
+.backlog-panel {
+    background-color: #ccc;
+    flex: 0 0 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.backlog-panel__title {
+    text-align: center;
+}
+
+.backlog-panel__tasks-container {
+    flex: 1 0;
+}
+
+.backlog-panel__task {
+    width: 100%;
+    padding: 7px 10px;
+    margin-bottom: 10px;
+    background-color: rgb(63, 63, 63);
+}
