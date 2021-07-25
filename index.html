@@ -18,15 +18,15 @@
     <div class="main-container">
         <div class="tasks-panel">
             <div class="tasks-panel__actions-row">
-                <button type="button" class="tasks-panel__action">Назад</button>
-                <button type="button" class="tasks-panel__action">Вперед</button>
+                <button type="button" class="tasks-panel__action" id="prev-button">Назад</button>
+                <button type="button" class="tasks-panel__action" id="next-button">Вперед</button>
             </div>
             <div class="tasks-panel__tabs">
             </div>
             <div class="tasks-panel__schedule">
                 <div class="tasks-panel__row days-row" id="calendar">
                 </div>
-                <div class="tasks-panel__tasks-group" id="tasks">
+                <div class="tasks-panel__tasks-group" id="schedule">
                     <div class="tasks-panel__row user-row" id="default-row">
                         Нет задач
                     </div>
@@ -35,11 +35,16 @@
         </div>
         <div class="backlog-panel">
             <h2 class="backlog-panel__title">Backlog</h2>
+            <form class="search-row">
+                <div class="wrapper">
+                    <input placeholder="Поиск" type="text" class="search">
+                    <img class="clear-icon" src="cancel.svg" />
+                </div>
+                <button class="search-btn" type="submit"><img src="search.svg" class="search-icon"></button>
+            </form>
             <div class="backlog-panel__tasks-container" id="tasks-container">
-
             </div>
         </div>
     </div>
 </body>
-
 </html>
