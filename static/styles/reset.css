@@ -27,21 +27,14 @@ dd {
 }
 
 body {
-    min-height: 100vh;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
 }
 
-body, html {
+body,
+html {
     height: 100%;
-}
-
-body {
-    font-family: 'Open Sans', sans-serif;
-    color: #100C02;
-    background: #F4F3F8;
-    font-size: 14px;
 }
 
 ul[class],
@@ -49,7 +42,6 @@ ol[class] {
     list-style: none;
 }
 
-/* Наследуем шрифты для инпутов и кнопок */
 input,
 button,
 textarea,

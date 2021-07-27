@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <title>Планировщик</title>
 
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/schedule.css">
+    <link rel="stylesheet" href="styles/backlog.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
-    <script src="index.js" type="module"></script>
+    <script src="js/index.js" type="module"></script>
 </head>
 
 <body>
@@ -22,13 +25,19 @@
                 <button type="button" class="tasks-panel__action" id="next-button">Вперед</button>
             </div>
             <div class="tasks-panel__tabs">
+                <div class="tasks-panel__tab tab-today">
+                    <div class="tasks-panel__tab-label">
+                        Сегодня
+                    </div>
+                    <div class="tasks-panel__tab-line"></div>
+                </div>
             </div>
             <div class="tasks-panel__schedule">
                 <div class="tasks-panel__row days-row" id="calendar">
                 </div>
                 <div class="tasks-panel__tasks-group" id="schedule">
                     <div class="tasks-panel__row user-row" id="default-row">
-                        Нет задач
+                        Нет данных
                     </div>
                 </div>
             </div>
@@ -38,13 +47,14 @@
             <form class="search-row">
                 <div class="wrapper">
                     <input placeholder="Поиск" type="text" class="search">
-                    <img class="clear-icon" src="cancel.svg" />
+                    <img class="clear-icon" src="svg/cancel.svg" />
                 </div>
-                <button class="search-btn" type="submit"><img src="search.svg" class="search-icon"></button>
+                <button class="search-btn" type="submit"><img src="svg/search.svg" class="search-icon"></button>
             </form>
             <div class="backlog-panel__tasks-container" id="tasks-container">
             </div>
         </div>
     </div>
 </body>
+
 </html>
